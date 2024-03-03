@@ -31,12 +31,7 @@ const Footer = () => {
                     esse cillum dolore eu fugiat nulla pariatur.
                 </div>
                 <div className="socialIcons">
-                    <span className="icon">
-                        <FaFacebookF />
-                    </span>
-                    <span className="icon">
-                        <FaInstagram />
-                    </span>
+                   
                     <a href = "https://github.com/Abhishek313">
                         <span className="icon">
                         <FaGithub />
