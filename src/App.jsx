@@ -18,10 +18,7 @@ function App() {
     const { url } = useSelector((state) => state.home);
     console.log(url);
 
-    useEffect(() => {
-        fetchApiConfig();
-        genresCall();
-    }, []);
+  
 
     const fetchApiConfig = () => {
         fetchDataFromApi("/configuration").then((res) => {
@@ -36,6 +33,11 @@ function App() {
             dispatch(getApiConfiguration(url));
         });
     };
+
+    useEffect(() => {
+        fetchApiConfig();
+        genresCall();
+    }, []);
 
     const genresCall = async () => {
         let promises = [];
